@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " auto set indent settings
   Plug 'tpope/vim-sleuth'
 
+  Plug 'unblevable/quick-scope'
 
   if exists('g:vscode')
     " Easy motion for VSCode
@@ -48,6 +49,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/rainbow_parentheses.vim'
     Plug 'ryanoasis/vim-devicons'
     Plug 'morhetz/gruvbox'
+    Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+
 
     " tmux pane switching
     Plug 'christoomey/vim-tmux-navigator'
@@ -57,7 +60,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Text Navigation
     Plug 'justinmk/vim-sneak'
-    Plug 'unblevable/quick-scope'
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
@@ -74,6 +76,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Snippets
     Plug 'honza/vim-snippets'
     Plug 'mattn/emmet-vim'
+    Plug 'honza/vim-snippets'
 
     " FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -86,8 +89,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neomake/neomake'
 
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    
   endif
 
 
 call plug#end()
 
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
