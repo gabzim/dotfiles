@@ -6,6 +6,7 @@ set foldmethod=syntax
 " file navigation
 nnoremap <silent> gr :<C-u>call VSCodeNotify('editor.action.goToReferences')<CR>
 nnoremap <silent> gv :<C-u>call VSCodeNotify('editor.action.revealDefinitionAside')<CR>
+nnoremap <silent> gi :<C-u>call VSCodeNotify('editor.action.goToImplementation')<CR>
 nnoremap <silent> <leader>o :<C-u>call VSCodeNotify('workbench.action.quickOpen')<CR>
 nnoremap <silent> <leader>f :<C-u>call VSCodeNotify('workbench.action.findInFiles')<CR>
 nnoremap <silent> [g :<C-u>call VSCodeNotify('editor.action.marker.prev')<CR>

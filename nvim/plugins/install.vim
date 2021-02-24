@@ -74,9 +74,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     
     " Snippets
-    Plug 'honza/vim-snippets'
+    "Plug 'honza/vim-snippets'
     Plug 'mattn/emmet-vim'
-    Plug 'honza/vim-snippets'
 
     " FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

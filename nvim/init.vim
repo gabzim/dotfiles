@@ -16,6 +16,7 @@ if exists('g:vscode')
 else
   " ordinary neovim
   source $HOME/.config/nvim/general/cli-settings.vim
+  source $HOME/.config/nvim/plugins/go.vim
   source $HOME/.config/nvim/themes/syntax.vim
   source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/plugins/tmux.vim
