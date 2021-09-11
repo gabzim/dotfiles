@@ -77,7 +77,11 @@
       "args": ["start"],
       "filetypes": ["sh"],
       "ignoredRootPaths": ["~"]
-    }
+    },
+    "flux": {
+        "command": "flux-lsp",
+        "filetypes": ["flux"]
+      }
   }
 
   // TODO b:coc_suggest_disable=1 GOYO

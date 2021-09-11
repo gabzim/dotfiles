@@ -27,16 +27,21 @@
   set nowritebackup                       " This is recommended by coc
   set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
   set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
-  set updatetime=800                      " Faster completion
+  set updatetime=400                      " Faster completion
   set clipboard=unnamedplus               " Copy paste between vim and everything else
   set incsearch
   set guifont=Hack\ Nerd\ Font
   set termguicolors
+  set timeoutlen=1000
+  set ttimeoutlen=5
+  set ignorecase
+  set smartcase
 
   set foldmethod=indent   
   set foldnestmax=10
   set nofoldenable
   set foldlevel=2
+  set nohlsearch
 
   " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   " set mmp=1300

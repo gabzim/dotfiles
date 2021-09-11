@@ -1,5 +1,5 @@
 set iskeyword+=-                      	" treat dash separated words as a word text object"
-set formatoptions-=cro                  " Stop newline continution of comments
+
 
 " Always source these
 source $HOME/.config/nvim/plugins/install.vim
@@ -14,6 +14,7 @@ if exists('g:vscode')
   source $HOME/.config/nvim/vscode/vscode-gabzim.vim
   source $HOME/.config/nvim/plugins/easymotion.vim
 else
+  colorscheme gruvbox
   " ordinary neovim
   source $HOME/.config/nvim/general/cli-settings.vim
   source $HOME/.config/nvim/plugins/go.vim
@@ -21,6 +22,7 @@ else
   source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/plugins/tmux.vim
   source $HOME/.config/nvim/plugins/fzf.vim
+  " luafile $HOME/.config/nvim/plugins/telescope.lua
   source $HOME/.config/nvim/plugins/nerd-commenter.vim
   source $HOME/.config/nvim/plugins/quickscope.vim
   source $HOME/.config/nvim/plugins/coc.vim
@@ -30,4 +32,5 @@ else
   source $HOME/.config/nvim/plugins/closetags.vim
   source $HOME/.config/nvim/plugins/vista.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+  source $HOME/.config/nvim/plugins/firenvim.vim
 endif

@@ -6,16 +6,6 @@
 	<true/>
 	<key>AlternateMouseScroll</key>
 	<false/>
-	<key>AppleAntiAliasingThreshold</key>
-	<integer>1</integer>
-	<key>ApplePressAndHoldEnabled</key>
-	<false/>
-	<key>AppleScrollAnimationEnabled</key>
-	<integer>0</integer>
-	<key>AppleSmoothFixedFontsSizeThreshold</key>
-	<integer>1</integer>
-	<key>AppleWindowTabbingMode</key>
-	<string>manual</string>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>gruvbox-dark</key>
@@ -362,6 +352,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>AC73806B-2BED-4F83-97F2-C24263E361B6</string>
+	<key>DisableWindowSizeSnap</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -385,12 +377,14 @@
 			<key>Text</key>
 			<string>\e:bd\n</string>
 		</dict>
-		<key>0x6b-0x100000</key>
+		<key>0x6b-0x100000-0x0</key>
 		<dict>
 			<key>Action</key>
 			<integer>38</integer>
+			<key>Label</key>
+			<string></string>
 			<key>Text</key>
-			<string>\&lt;C-u&gt;</string>
+			<string>\&lt;C-q&gt;</string>
 		</dict>
 		<key>0x77-0x100000</key>
 		<dict>
@@ -501,7 +495,7 @@
 			<key>ASCII Anti Aliased</key>
 			<true/>
 			<key>ASCII Ligatures</key>
-			<true/>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -745,7 +739,9 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
+			<key>Blur Radius</key>
+			<real>24.80103495489691</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1149,9 +1145,11 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGLNer-Regular 12</string>
+			<string>JetBrainsMonoNerdFontCompleteM-Regular 14</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
@@ -1201,7 +1199,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.062121456185567019</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>

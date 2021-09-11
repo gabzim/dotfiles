@@ -48,7 +48,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'junegunn/rainbow_parentheses.vim'
     Plug 'ryanoasis/vim-devicons'
-    Plug 'morhetz/gruvbox'
+    Plug 'gruvbox-community/gruvbox'
+    Plug 'arcticicestudio/nord-vim'
     Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
 
@@ -72,15 +73,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'gianarb/vim-flux'
+    Plug 'mattn/webapi-vim'
     
     " Snippets
     "Plug 'honza/vim-snippets'
     Plug 'mattn/emmet-vim'
 
     " FZF
+    " Plug 'nvim-lua/popup.nvim'
+    " Plug 'nvim-lua/plenary.nvim'
+    " Plug 'nvim-telescope/telescope.nvim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    
+    Plug 'junegunn/fzf.vim'   
+
     " Vista
     Plug 'liuchengxu/vista.vim'
 
@@ -90,6 +96,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+
+    Plug 'vimwiki/vimwiki'
     
   endif
 

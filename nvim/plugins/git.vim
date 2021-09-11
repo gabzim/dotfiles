@@ -16,3 +16,8 @@ let g:NERDTreeIgnore = ['^node_modules$', '^.idea$', '^.git$']
 
 let g:gitgutter_diff_base = 'HEAD'
 
+nmap <leader>gs :G<CR>
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gl :diffget //2<CR>
+nmap <leader>gfp :G push --force<CR>
+nmap <leader>gp :G push<CR>

@@ -11,9 +11,9 @@ let g:fzf_action = {
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_buffers_jump = 1
 
-nnoremap <silent> <leader>f :Rg<CR>
-nnoremap <silent> <leader>o :Files<CR>
-nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <silent> <leader>ff :Rg<CR>
+nnoremap <silent> <leader>fo :Files<CR>
+nnoremap <silent> <leader>fb :Buffers<CR>
 
 let g:fzf_tags_command = 'ctags -R'
 " Border color

@@ -20,6 +20,7 @@ let g:coc_global_extensions = [
     \ 'coc-yank',
     \ 'coc-json',
     \ 'coc-marketplace',
+    \ 'coc-go',
     \ ]
 
 " Remap for rename current word
@@ -172,12 +173,19 @@ imap <C-l> <Plug>(coc-snippets-expand)
 vmap <C-j> <Plug>(coc-snippets-select)
 
 " Use <C-j> for jump to next placeholder, it's default of coc.nvim
-let g:coc_snippet_next = '<leader>;'
+let g:coc_snippet_next = '<C-f>'
 
 " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
-let g:coc_snippet_prev = '<leader>,'
+let g:coc_snippet_prev = '<C-g>'
 
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump) 
 
+vmap <leader>cf  <Plug>(coc-format-selected)
+nmap <leader>cf  <Plug>(coc-format-selected)
+
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+inoremap <C-p> <C-\><C-O>:call CocActionAsync('showSignatureHelp')<cr>
+
+let g:influxdbHostPort = $INFLUXDB_HOST
+let g:influxdbAuthToken = $INFLUXB_TOKEN
