@@ -30,7 +30,7 @@
   set updatetime=400                      " Faster completion
   set clipboard=unnamedplus               " Copy paste between vim and everything else
   set incsearch
-  set guifont=Hack\ Nerd\ Font
+  set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h16
   set termguicolors
   set timeoutlen=1000
   set ttimeoutlen=5
@@ -43,6 +43,8 @@
   set foldlevel=2
   set nohlsearch
 
+  let g:neovide_cursor_vfx_mode = "railgun"
+  let g:neovide_transparency = 1
   " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   " set mmp=1300
   " set autochdir                           " Your working directory will always be the same as your working directory

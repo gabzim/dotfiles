@@ -26,6 +26,7 @@ else
   source $HOME/.config/nvim/plugins/nerd-commenter.vim
   source $HOME/.config/nvim/plugins/quickscope.vim
   source $HOME/.config/nvim/plugins/coc.vim
+  source $HOME/.config/nvim/plugins/flutter.vim
   source $HOME/.config/nvim/plugins/sneak.vim
   source $HOME/.config/nvim/plugins/start-screen.vim
   source $HOME/.config/nvim/plugins/git.vim

@@ -21,7 +21,11 @@ let g:coc_global_extensions = [
     \ 'coc-json',
     \ 'coc-marketplace',
     \ 'coc-go',
+    \ 'coc-flutter',
     \ ]
+
+let g:dart_format_on_save = 1
+let g:dartfmt_options = ['--fix', '--line-length 120']
 
 " Remap for rename current word
 nmap <F2> <Plug>(coc-rename)
@@ -59,6 +63,9 @@ nmap <silent> gv :call CocAction('jumpDefinition', 'vsplit')<cr>
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nnoremap <leader>fd :below new output:///flutter-dev <CR>
+nnoremap <leader>fe :CocCommand flutter.emulators <CR>
+
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -89,6 +96,7 @@ augroup end
 " Example: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>e <Plug>(coc-codeaction-cursor)
 
 " Remap keys for applying codeAction to the current line.
 nmap <leader>ac  <Plug>(coc-codeaction)

@@ -77,8 +77,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/webapi-vim'
     
     " Snippets
-    "Plug 'honza/vim-snippets'
+    Plug 'honza/vim-snippets'
     Plug 'mattn/emmet-vim'
+    Plug 'natebosch/dartlang-snippets'
 
     " FZF
     " Plug 'nvim-lua/popup.nvim'
@@ -94,11 +95,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neomake/neomake'
 
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+    Plug 'dart-lang/dart-vim-plugin'   
 
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
     Plug 'vimwiki/vimwiki'
-    
   endif
 
 
